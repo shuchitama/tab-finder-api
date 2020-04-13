@@ -12,3 +12,6 @@ INSERT INTO users (name, email)
 VALUES ('Jane Doe', 'example@example.com'),
 ('John Doe', 'example2@example.com'),
 ('Shuchita Mahey', 'sm@example.com');
+
+INSERT INTO chords (name)
+VALUES ('Em'), ('A'), ('B'), ('Bb');

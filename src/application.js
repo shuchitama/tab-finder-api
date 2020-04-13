@@ -11,6 +11,7 @@ const app = express();
 const db = require("./db");
 
 const songs = require("./routes/songs");
+const chords = require("./routes/chords");
 
 function read(file) {
   return new Promise((resolve, reject) => {
@@ -36,6 +37,8 @@ module.exports = function application(
   app.use(bodyparser.json());
 
   app.use("/api", songs(db));
+  app.use("/api", chords(db));
+
 
   if (ENV === "development" || ENV === "test") {
     Promise.all([
