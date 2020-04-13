@@ -6,7 +6,7 @@ module.exports = db => {
       `
       SELECT
         songs.id,
-        songs.name,
+        songs.title,
         songs.artist
       FROM songs
     `
