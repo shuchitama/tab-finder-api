@@ -10,9 +10,7 @@ const app = express();
 
 const db = require("./db");
 
-const days = require("./routes/days");
-const appointments = require("./routes/appointments");
-const interviewers = require("./routes/interviewers");
+const songs = require("./routes/songs");
 
 function read(file) {
   return new Promise((resolve, reject) => {
@@ -31,15 +29,13 @@ function read(file) {
 
 module.exports = function application(
   ENV,
-  actions = { updateAppointment: () => {} }
+  actions = { updateAppointment: () => { } }
 ) {
   app.use(cors());
   app.use(helmet());
   app.use(bodyparser.json());
 
-  app.use("/api", days(db));
-  app.use("/api", appointments(db, actions.updateAppointment));
-  app.use("/api", interviewers(db));
+  app.use("/api", songs(db));
 
   if (ENV === "development" || ENV === "test") {
     Promise.all([
@@ -49,9 +45,10 @@ module.exports = function application(
       .then(([create, seed]) => {
         app.get("/api/debug/reset", (request, response) => {
           db.query(create)
-            .then(() => db.query(seed))
             .then(() => {
-              console.log("Database Reset");
+              db.query(seed)
+            })
+            .then(() => {
               response.status(200).send("Database Reset");
             });
         });
@@ -61,7 +58,7 @@ module.exports = function application(
       });
   }
 
-  app.close = function() {
+  app.close = function () {
     return db.end();
   };
 
