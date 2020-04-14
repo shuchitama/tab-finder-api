@@ -1,6 +1,6 @@
 INSERT INTO users (name, email, password)
-VALUES ('Mari', 'me@u.com', 'password'),
-('Shuchita Mahey', 'sm@example.com', 'password');
+VALUES ('Mari', 'me@you.com', 'password'),
+('Shuchita', 'sm@example.com', 'password');
 
 INSERT INTO songs (title, artist)
 VALUES ('Jolene', 'Dolly Parton'),
@@ -51,3 +51,7 @@ VALUES (4, 1), (4, 15), (4, 11),
 (18, 21), (18, 3), (18, 16), (18, 7),
 (19, 3), (19, 7), (19, 16), (19, 11), 
 (20, 15), (20, 5), (20, 10), (20, 1);
+
+
+INSERT INTO user_songs (user_id, song_id)
+VALUES (1, 3), (1, 6), (1, 12), (1, 20), (2, 18), (2, 1), (2, 9), (2, 13);
