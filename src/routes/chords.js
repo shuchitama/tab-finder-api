@@ -7,7 +7,7 @@ module.exports = db => {
       SELECT
         chords.id,
         chords.name
-      FROM chords
+      FROM chords;
     `
     ).then(({ rows: chords }) => {
       response.json(chords);

@@ -8,7 +8,7 @@ module.exports = db => {
         songs.id,
         songs.title,
         songs.artist
-      FROM songs
+      FROM songs;
     `
     ).then(({ rows: songs }) => {
       response.json(songs);
