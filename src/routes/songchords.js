@@ -15,19 +15,6 @@ module.exports = db => {
       response.json(chordsArr)
     })
     .catch(err => console.log(err))
-
-
-    // db.query(
-    //   `
-    //   SELECT
-    //     *
-    //   FROM song_chords;
-    // `
-    // ).then(({ rows: songchords }) => {
-    //   response.json(songchords);
-    // });
-
-
   });
 
   return router;
