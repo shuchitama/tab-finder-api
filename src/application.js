@@ -53,6 +53,7 @@ module.exports = function application(
             })
             .then(() => {
               response.status(200).send("Database Reset");
+              console.log("Database Reset!")
             });
         });
       })
