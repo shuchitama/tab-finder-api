@@ -22,7 +22,12 @@ VALUES ('Jolene', 'Dolly Parton'),
 ('Pumped up kicks', 'Foster The People'),
 ('Halo', 'Beyonce'),
 ('Get lucky', 'Daft Punk'),
-('Dont stop believin', 'Journey');
+('Dont stop believin', 'Journey'),
+('Born in the USA', 'Bruce Springsteen'),
+('Eleanor Rigby', 'Beatles'),
+('Fallin', 'Alicia Keys'),
+('Id rather go blind', 'Etta James'),
+('Wicked game', 'Chris Isaak');
 
 INSERT INTO chords (name)
 VALUES ('A'), ('A#'), ('Am'), ('A#m'), ('B'), ('Bm'), ('C'), ('C#'), ('Cm'), ('C#m'),
@@ -49,7 +54,12 @@ VALUES (4, 1), (4, 15), (4, 11),
 (17, 16), (17, 21), (17, 11), (17, 1),
 (18, 21), (18, 3), (18, 16), (18, 7),
 (19, 3), (19, 7), (19, 16), (19, 11), 
-(20, 15), (20, 5), (20, 10), (20, 1);
+(20, 15), (20, 5), (20, 10), (20, 1),
+(21, 7), (21, 21),
+(22, 7), (22, 16),
+(23, 3), (23, 13),
+(24, 21), (24, 3),
+(25, 1), (25, 6), (25, 15);
 
 
 INSERT INTO user_songs (user_id, song_id)
