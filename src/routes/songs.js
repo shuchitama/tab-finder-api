@@ -13,7 +13,6 @@ module.exports = db => {
     `
     ).then(({ rows: songs }) => {
       for (const song of songs) {
-        // console.log(song);
         song.chords = song.chords.split(',');
       }
       response.json(songs);
