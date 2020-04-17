@@ -3,14 +3,14 @@ VALUES ('Mari', 'me@you.com', 'password'),
 ('Shuchita', 'sm@example.com', 'password');
 
 INSERT INTO songs (title, artist, url)
-VALUES ('Jolene', 'Dolly Parton', null),
+VALUES ('Jolene', 'Dolly Parton', 'https://tabs.ultimate-guitar.com/tab/dolly-parton/jolene-chords-183019'),
 ('Wonderwall', 'Oasis', 'https://tabs.ultimate-guitar.com/tab/oasis/wonderwall-chords-27596'),
 ('Linger', 'The Cranberries', 'https://tabs.ultimate-guitar.com/tab/the-cranberries/linger-chords-2140009'),
-('Smelly Cat', 'Phoebe Buffay', 'https://tabs.ultimate-guitar.com/tab/phoebe-buffay/smelly-cat-chords-859273'),
-('Fallin in love again', 'Eagle Eye Cherry', null),
-('Whats up', '4 non Blondes', null),
-('Set fire to the rain', 'Adele', null),
-('Party in the USA', 'Miley Cyrus', null),
+('Smelly cat', 'Phoebe Buffay', 'https://tabs.ultimate-guitar.com/tab/phoebe-buffay/smelly-cat-chords-859273'),
+('Fallin in love again', 'Eagle Eye Cherry', 'https://tabs.ultimate-guitar.com/tab/eagle-eye-cherry/falling-in-love-again-chords-375383'),
+('Whats up', '4 non Blondes', 'https://tabs.ultimate-guitar.com/tab/4-non-blondes/whats-up-chords-850289'),
+('Set fire to the rain', 'Adele', 'https://tabs.ultimate-guitar.com/tab/adele/set-fire-to-the-rain-chords-1036340'),
+('Party in the USA', 'Miley Cyrus', 'https://tabs.ultimate-guitar.com/tab/miley-cyrus/party-in-the-usa-chords-1227643'),
 ('Zombie', 'The Cranberries', null),
 ('Have you ever seen the rain', 'CCR', null),
 ('Have over feet', 'Alanis Morissette', null),
@@ -29,9 +29,31 @@ VALUES ('Jolene', 'Dolly Parton', null),
 ('Id rather go blind', 'Etta James', null),
 ('Wicked game', 'Chris Isaak', null);
 
-INSERT INTO chords (name)
-VALUES ('A'), ('A#'), ('Am'), ('A#m'), ('B'), ('Bm'), ('C'), ('C#'), ('Cm'), ('C#m'),
-('D'), ('D#'), ('Dm'), ('D#m'), ('E'), ('Em'), ('F'), ('F#'), ('Fm'), ('F#m'), ('G'), ('G#'), ('Gm'), ('G#m');
+INSERT INTO chords (name, url)
+VALUES ('A', 'https://jguitar.com/images/chordshape/A-Major-A-x%2C0%2C2%2C2%2C2%2C0.png'), 
+('Bb', 'https://jguitar.com/images/chordshape/Bb-Major-Bb-x%2C1%2C3%2C3%2C3%2C1.png'), 
+('Am', 'https://jguitar.com/images/chordshape/A-Minor-A-x%2C0%2C2%2C2%2C1%2C0.png'), 
+('Bbm', 'https://jguitar.com/images/chordshape/Bb-Minor-Bb-x%2C1%2C3%2C3%2C2%2C1.png'), 
+('B', 'https://jguitar.com/images/chordshape/B-Major-B-x%2C2%2C4%2C4%2C4%2C2.png'), 
+('Bm', 'https://jguitar.com/images/chordshape/B-Minor-B-x%2C2%2C4%2C4%2C3%2C2.png'), 
+('C', 'https://jguitar.com/images/chordshape/C-Major-C-x%2C3%2C2%2C0%2C1%2C0.png'), 
+('C#', 'https://jguitar.com/images/chordshape/Csharp-Major-Csharp-x%2C4%2C6%2C6%2C6%2C4.png'), 
+('Cm', 'https://jguitar.com/images/chordshape/C-Minor-C-x%2C3%2C5%2C5%2C4%2C3.png'), 
+('C#m', 'https://jguitar.com/images/chordshape/Csharp-Minor-Csharp-x%2C4%2C6%2C6%2C5%2C4.png'),
+('D', 'https://jguitar.com/images/chordshape/D-Major-D-x%2Cx%2C0%2C2%2C3%2C2.png'), 
+('D#', 'https://jguitar.com/images/chordshape/Dsharp-Major-Dsharp-x%2C6%2C8%2C8%2C8%2C6.png'), 
+('Dm', 'https://jguitar.com/images/chordshape/D-Minor-D-x%2Cx%2C0%2C2%2C3%2C1.png'), 
+('D#m', 'https://jguitar.com/images/chordshape/Dsharp-Minor-Dsharp-x%2C6%2C8%2C8%2C7%2C6.png'), 
+('E', 'https://jguitar.com/images/chordshape/E-Major-E-0%2C2%2C2%2C1%2C0%2C0.png'), 
+('Em', 'https://jguitar.com/images/chordshape/E-Minor-E-0%2C2%2C2%2C0%2C0%2C0.png'),
+('F', 'https://jguitar.com/images/chordshape/F-Major-F-1%2C3%2C3%2C2%2C1%2C1.png'), 
+('F#', 'https://jguitar.com/images/chordshape/Fsharp-Major-Fsharp-2%2C4%2C4%2C3%2C2%2C2.png'), 
+('Fm', 'https://jguitar.com/images/chordshape/F-Minor-F-1%2C3%2C3%2C1%2C1%2C1.png'), 
+('F#m', 'https://jguitar.com/images/chordshape/Fsharp-Minor-Fsharp-2%2C4%2C4%2C2%2C2%2C2.png'), 
+('G', 'https://jguitar.com/images/chordshape/G-Major-G-3%2C2%2C0%2C0%2C3%2C3.png'), 
+('G#', 'https://jguitar.com/images/chordshape/Gsharp-Major-Gsharp-4%2C6%2C6%2C5%2C4%2C4.png'), 
+('Gm', 'https://jguitar.com/images/chordshape/G-Minor-G-3%2C5%2C5%2C3%2C3%2C3.png'), 
+('G#m', 'https://jguitar.com/images/chordshape/Gsharp-Minor-Gsharp-4%2C6%2C6%2C4%2C4%2C4.png');
 
 
 INSERT INTO song_chords (song_id, chord_id)

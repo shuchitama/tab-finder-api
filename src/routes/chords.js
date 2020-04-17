@@ -6,7 +6,8 @@ module.exports = db => {
       `
       SELECT
         chords.id,
-        chords.name
+        chords.name,
+        chords.url
       FROM chords;
     `
     ).then(({ rows: chords }) => {

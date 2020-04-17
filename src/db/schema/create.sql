@@ -20,7 +20,8 @@ CREATE TABLE songs (
 
 CREATE TABLE chords (
   id SERIAL PRIMARY KEY NOT NULL,
-  name VARCHAR(5) NOT NULL
+  name VARCHAR(5) NOT NULL,
+  url VARCHAR(255)
 );
 
 CREATE TABLE song_chords (
