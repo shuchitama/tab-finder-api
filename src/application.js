@@ -13,6 +13,7 @@ const db = require("./db");
 const songs = require("./routes/songs");
 const chords = require("./routes/chords");
 const songchords = require("./routes/songchords");
+const usersongs = require("./routes/usersongs");
 
 function read(file) {
   return new Promise((resolve, reject) => {
@@ -40,6 +41,7 @@ module.exports = function application(
   app.use("/api", songs(db));
   app.use("/api", chords(db));
   app.use("/api", songchords(db));
+  app.use("/api", usersongs(db));
 
 
   if (ENV === "development" || ENV === "test") {
