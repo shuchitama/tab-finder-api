@@ -15,5 +15,18 @@ module.exports = db => {
     });
   });
 
+  router.put("/usersongs", (request, response) => {
+    const { userid, songid } = request.body;
+
+    db.query(
+      `
+      INSERT INTO user_songs (user_id, song_id) VALUES ($1, $2)
+      `,
+      [userid, songid]
+    )
+      .then(() => console.log('Song has been added to Favourites'))
+      .catch(error => console.log(error));
+  });
+
   return router;
 };
