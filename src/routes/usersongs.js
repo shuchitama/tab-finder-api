@@ -24,7 +24,8 @@ module.exports = db => {
       `,
       [userid, songid]
     )
-      .then(() => console.log('Song has been added to Favourites'))
+      .then(() => {response.status(201).send()
+      console.log('Song has been added to Favourites')})
       .catch(error => console.log(error));
   });
 
