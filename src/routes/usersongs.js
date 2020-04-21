@@ -29,5 +29,20 @@ module.exports = db => {
       .catch(error => console.log(error));
   });
 
+  router.delete("/usersongs", (request, response) => {
+    // console.log("delete request:",request.body)
+    const { songid } = request.body;
+
+    db.query(
+      `
+      DELETE FROM user_songs WHERE song_id = $1
+      `,
+      [songid]
+    )
+      .then(() => {response.status(204).send()
+      console.log('Song has been deleted from Favourites')})
+      .catch(error => console.log(error));
+  });
+
   return router;
 };
