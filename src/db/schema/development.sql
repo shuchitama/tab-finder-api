@@ -28,7 +28,14 @@ VALUES ('Jolene', 'Dolly Parton', 'https://tabs.ultimate-guitar.com/tab/dolly-pa
 ('Fallin''', 'Alicia Keys', 'https://tabs.ultimate-guitar.com/tab/alicia-keys/fallin-chords-635294'),
 ('I''d rather go blind', 'Etta James', 'https://tabs.ultimate-guitar.com/tab/etta-james/id-rather-go-blind-chords-629500'),
 ('Wicked game', 'Chris Isaak', 'https://tabs.ultimate-guitar.com/tab/chris-isaak/wicked-game-chords-11066'),
-('Knockin'' on heaven''s door', 'Bob Dylan', 'https://tabs.ultimate-guitar.com/tab/bob-dylan/knockin-on-heavens-door-chords-66559');
+('Knockin'' on heaven''s door', 'Bob Dylan', 'https://tabs.ultimate-guitar.com/tab/bob-dylan/knockin-on-heavens-door-chords-66559'),
+('Stand by me', 'Ben E. King', 'https://tabs.ultimate-guitar.com/tab/ben-e-king/stand-by-me-chords-73005'),
+('All the small things', 'Blink 182', 'https://tabs.ultimate-guitar.com/tab/blink-182/all-the-small-things-chords-118610'),
+('The tide is high', 'Blondie', 'https://tabs.ultimate-guitar.com/tab/blondie/the-tide-is-high-chords-62181'),
+('Sweet home Alabama', 'Lynyrd Skynyrd', 'https://tabs.ultimate-guitar.com/tab/lynyrd-skynyrd/sweet-home-alabama-chords-1053582'),
+('Born this way', 'Lady Gaga', 'https://tabs.ultimate-guitar.com/tab/lady-gaga/born-this-way-chords-1028954'),
+('Truly madly deeply', 'Savage Garden', 'https://tabs.ultimate-guitar.com/tab/savage-garden/truly-madly-deeply-chords-3337');
+
 
 
 INSERT INTO chords (name, url)
@@ -84,7 +91,13 @@ VALUES (4, 1), (4, 15), (4, 11),
 (23, 3), (23, 13),
 (24, 1), (24, 6),
 (25, 1), (25, 6), (25, 15),
-(26, 21), (26, 7), (26, 3), (26, 11);
+(26, 21), (26, 7), (26, 3), (26, 11),
+(27, 1), (27, 19), (27, 11), (27, 15),
+(28, 7), (28, 21), (28, 17),
+(29, 1), (29, 11), (29, 15),
+(30, 11), (30, 7), (30, 21),
+(31, 21), (31, 17), (31, 7),
+(32, 7), (32, 21), (32, 17), (32, 3);
 
 
 INSERT INTO user_songs (user_id, song_id)
