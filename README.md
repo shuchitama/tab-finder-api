@@ -1,13 +1,19 @@
 # Tab Finder API
 
-How to use our API:
+API used on [Tab Finder](https://github.com/shuchitama/tab-finder).
+
+
+
+## How to use the API:
 
 Send a GET request to `https://tab-finder-api.herokuapp.com` 
 
+
 End points:
+
 /api/songs
+
 /api/chords
-/api/song
 
 
 ### Songs
@@ -39,7 +45,11 @@ Response
 Response:
 
 ```json
-{
-  
-}
+[
+  {
+    id: 1,
+    name: "A",
+    url: "https://jguitar.com/images/chordshape/A-Major-A-x%2C0%2C2%2C2%2C2%2C0.png"
+  }
+]
 ```
